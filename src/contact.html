@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="./style.css">
     <title>my portfolio website</title>
+    
 </head>
 <body>
     <header class="header">
-        <a href="home.html" class="logo"> DAME</a>
-       
+        <p class="logo"> DAME</p>
+        <img src="./images/menu-regular.png" class='bx bx-menu' id="menu-icon" alt="menu-Icon"/>
         <nav class="navbar" id="nav">
-           <a class="active" href="home.html">Home</a>
+           <a href="home.html">Home</a>
            <a href="about.html">About</a>
            <a href="services.html">Services</a>
            <a href="portfolio.html">Portfolio</a>
-           <a href="contact.html">contact</a>
+           <a  class="active" href="contact.html">contact</a>
         </nav>
     </header>
     <!-- contact page -->
@@ -48,30 +50,24 @@
            </div>
               </div>
               <div class="contactForm">
-                  <form  method="POST">
-                  <h2>Send Message</h2>
+                <form action="mailto:dameabera11@gmail.com" method="GET" enctype="text/plain">
+                    <h2>Send Message</h2>
                 
-                  <div class="inputBox">
-                      <input type="text" name="email" required="required" placeholder="email">
+                    <div class="inputBox">
+                        <label for="email">Your Email:</label>
+                        <input type="email" name="email" id="email" required >
+                    </div>
+                    <div class="inputBox">
+                        <label for="message">Your Message:</label>
+                        <textarea name="message" id="message" required ></textarea>
+                    </div>
                 
-                  </div>
-                  <div class="inputBox">
-                      <input type="text" name="name" required="required" placeholder="Full Name">
-                     
-                  </div>
-                  <div class="inputBox">
-                      <textarea  placeholder="message"  name="message"></textarea>
-                    
-                  </div>
-                 
-                  <div class="inputBox">
-                      <input type="submit" name="name" value="send">
-                      
-                  </div>
-  
-                  </form>
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+                
               </div>
-             
   
           </div>
       </section>
@@ -84,5 +80,6 @@
 
         
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
