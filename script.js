@@ -31,3 +31,14 @@ header.classList.toggle('sticky',window.scrollY>100);
 /*remove toggle icon and navbar when click navbar link(scroll) */
 menuIcon.classList.remove('bx-x');
 navbar.classList.remove('active');}
+
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    
+    alert('Your message has been sent! (This is a simulation)');
+
+   
+    form.reset();
+});
