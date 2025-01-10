@@ -37,7 +37,7 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();
 
     
-    alert('Your message has been sent!');
+    alert('this page is if offline only!');
 
    
     form.reset();
