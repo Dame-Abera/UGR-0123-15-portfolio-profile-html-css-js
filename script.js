@@ -37,7 +37,7 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();
 
     
-    alert('Your message has been sent! (This is a simulation)');
+    alert('Your message has been sent!');
 
    
     form.reset();
