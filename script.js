@@ -37,7 +37,7 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();
 
     
-    alert('this page is propmpte to work  offline only so we cant send ure message!');
+    alert('this page is propmted to work  offline only so we cant send your message!');
 
    
     form.reset();
